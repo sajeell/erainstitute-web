@@ -1,0 +1,10 @@
+.phone-icon {
+  padding-right: 5%;
+}
+
+.upper-header-wrapper {
+  color: grey;
+  font-size: 12px;
+  text-transform: lowercase;
+  display: flex;
+}
