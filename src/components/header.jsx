@@ -78,9 +78,11 @@ const Header = () => {
 
             <div className={classes.buttons}>
               <Button color="secondary">HOME</Button>
-              <Button color="secondary">ABOUT</Button>
-              <Button color="secondary">COURSES</Button>
-              <Button color="secondary">TUTORS</Button>
+
+              <Button color="secondary">ABOUT US</Button>
+
+              <Button color="secondary">OUR SERVICES</Button>
+
               <Button color="secondary">CONTACT US</Button>
             </div>
           </Toolbar>
