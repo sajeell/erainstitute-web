@@ -15,7 +15,8 @@
     "react-dom": "^16.12.0",
     "react-responsive-carousel": "^3.1.51",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0"
+    "react-scripts": "3.3.0",
+    "reactstrap": "^8.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,5 +43,8 @@
   "repository": "git@github.com:pyBae-py/erainstitute-web.git",
   "author": "pyBae-py <sajeel.ahmed@protonmail.com>",
   "license": "MIT",
-  "homepage": "https://erainstitute.000webhostapp.com/"
+  "homepage": "https://erainstitute.000webhostapp.com/",
+  "devDependencies": {
+    "emailjs-com": "^2.4.1"
+  }
 }
