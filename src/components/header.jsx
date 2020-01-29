@@ -5,8 +5,6 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 import PhoneIcon from "@material-ui/icons/Phone";
 import DraftsIcon from "@material-ui/icons/Drafts";
 
@@ -47,7 +45,7 @@ const Header = () => {
               {" "}
               <div className="phone-icon">
                 <PhoneIcon
-                  style={{ fontSize: 16, paddingTop: 10, color: "red" }}
+                  style={{ fontSize: 25, paddingRight: 5, color: "red" }}
                 />
               </div>
               0302-7249009
@@ -62,8 +60,8 @@ const Header = () => {
               <div className="phone-icon">
                 <DraftsIcon
                   style={{
-                    fontSize: "medium",
-                    paddingTop: 10,
+                    fontSize: 25,
+                    paddingRight: 5,
                     color: "red"
                   }}
                 />

@@ -1,71 +1,61 @@
 import React from "react";
-import {
-  MDBCarousel,
-  MDBCarouselCaption,
-  MDBCarouselInner,
-  MDBCarouselItem,
-  MDBView,
-  MDBMask,
-  MDBContainer
-} from "mdbreact";
-
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-bootstrap";
+import fSlide from "./1slide.png";
+import sSlide from "./2slide.png";
+import tSlide from "./3rd slide.png";
+import "./compStyle.css";
 const CarouselPage = () => {
   return (
-    <MDBContainer>
-      <MDBCarousel
-        activeItem={1}
-        length={3}
-        showControls={true}
-        showIndicators={true}
-        className="z-depth-1"
+    <div className="carousel-wrapper">
+      <Carousel
+        autoPlay={true}
+        emulateTouch={true}
+        useKeyboardArrows={true}
+        centerMode={true}
+        dynamicHeight={true}
       >
-        <MDBCarouselInner>
-          <MDBCarouselItem itemId="1">
-            <MDBView>
-              <img
-                className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
-                alt="First slide"
-              />
-              <MDBMask overlay="black-light" />
-            </MDBView>
-            <MDBCarouselCaption>
-              <h3 className="h3-responsive">Light mask</h3>
-              <p>First text</p>
-            </MDBCarouselCaption>
-          </MDBCarouselItem>
-          <MDBCarouselItem itemId="2">
-            <MDBView>
-              <img
-                className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
-                alt="Second slide"
-              />
-              <MDBMask overlay="black-strong" />
-            </MDBView>
-            <MDBCarouselCaption>
-              <h3 className="h3-responsive">Strong mask</h3>
-              <p>Second text</p>
-            </MDBCarouselCaption>
-          </MDBCarouselItem>
-          <MDBCarouselItem itemId="3">
-            <MDBView>
-              <img
-                className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
-                alt="Third slide"
-              />
-              <MDBMask overlay="black-slight" />
-            </MDBView>
-            <MDBCarouselCaption>
-              <h3 className="h3-responsive">Slight Mast</h3>
-              <p>Third text</p>
-            </MDBCarouselCaption>
-          </MDBCarouselItem>
-        </MDBCarouselInner>
-      </MDBCarousel>
-    </MDBContainer>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={fSlide}
+            alt="First slide"
+            height="560rem"
+          />
+          <Carousel.Caption>
+            <h3 className="carousel-text">Era Institute</h3>
+            <p className="carousel-text">We Provide Online Tution</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={sSlide}
+            alt="Second slide"
+            height="560rem"
+          />
+
+          <Carousel.Caption>
+            <h3 className="carousel-text">Era Institute</h3>
+            <p className="carousel-text">We provide home tutors</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={tSlide}
+            alt="Third slide"
+            height="560rem"
+          />
+          <Carousel.Caption>
+            <h3 className="carousel-text">Era Institute</h3>
+            <p className="carousel-text">
+              Pioneer in 0/A Levels, Matric, FSC tution
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </div>
   );
 };
-
 export default CarouselPage;
