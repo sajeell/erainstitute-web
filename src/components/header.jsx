@@ -9,6 +9,7 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import PhoneIcon from "@material-ui/icons/Phone";
 import DraftsIcon from "@material-ui/icons/Drafts";
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
@@ -17,7 +18,20 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(2)
   },
   title: {
+    marginLeft: "2%",
     flexGrow: 1
+  },
+  toolbar: {
+    width: "100%"
+  },
+  appbar: {
+    width: "100%",
+    padding: "0px",
+    margin: "0px"
+  },
+  buttons: {
+    marginRight: "4%",
+    marginLeft: "5%"
   }
 }));
 
@@ -58,21 +72,19 @@ const Header = () => {
             </Button>
           </div>
         </div>
-        <AppBar position="static" color="secondary">
-          <Toolbar>
-            <IconButton
-              edge="start"
-              className={classes.menuButton}
-              color="inherit"
-              aria-label="menu"
-            >
-              <MenuIcon />
-            </IconButton>
+        <AppBar position="sticky" color="inherit" className={classes.appbar}>
+          <Toolbar className={classes.toolbar}>
             <Typography variant="h6" className={classes.title}>
               Era Institute
             </Typography>
-            <Button color="inherit"></Button>
-            <Button color="inherit">Login</Button>
+
+            <div className={classes.buttons}>
+              <Button color="secondary">HOME</Button>
+              <Button color="secondary">ABOUT</Button>
+              <Button color="secondary">COURSES</Button>
+              <Button color="secondary">TUTORS</Button>
+              <Button color="secondary">CONTACT US</Button>
+            </div>
           </Toolbar>
         </AppBar>
       </div>
